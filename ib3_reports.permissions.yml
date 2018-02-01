@@ -1,0 +1,3 @@
+view ib3_reports:
+  title: 'View ib3 Reports'
+  description: 'Allows a user to view the generated reports.'

@@ -1,0 +1,29 @@
+ib3_reports.index:
+  path: '/admin/health'
+  defaults:
+    _controller: '\Drupal\ib3_reports\Controller\ReportsController::index'
+    _title: 'Website Testing'
+  requirements:
+    _permission: 'view ib3_reports'
+  options:
+    _admin_route: TRUE
+
+ib3_reports.pages:
+  path: '/admin/health/pages'
+  defaults:
+    _controller: '\Drupal\ib3_reports\Controller\ReportsController::pages'
+    _title: 'Page Tests'
+  requirements:
+    _permission: 'view ib3_reports'
+  options:
+    _admin_route: TRUE
+
+ib3_reports.modules:
+  path: '/admin/health/modules'
+  defaults:
+    _controller: '\Drupal\ib3_reports\Controller\ReportsController::modules'
+    _title: 'Module Tests'
+  requirements:
+    _permission: 'view ib3_reports'
+  options:
+    _admin_route: TRUE

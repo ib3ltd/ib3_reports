@@ -1,0 +1,11 @@
+{
+    "name": "ib3/ib3_reports",
+    "description": "Displays results of phpunit tests.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "ib3",
+            "email": "team@ib3.uk"
+        }
+    ]
+}

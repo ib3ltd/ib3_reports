@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Contains ib3_reports.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ib3_reports_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ib3_reports module.
+    case 'help.page.ib3_reports':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('ib3 PHPUnit Reports Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ib3_reports_theme() {
+  return [
+    'index' => [
+      'variables' => [
+        'heading' => null
+      ],
+    ],
+    'report' => [
+      'variables' => [
+        'heading' => null,
+        'results' => null,
+        'page' => null,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ib3_reports_page_attachments(array &$attachments) {
+  //$is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
+  //if ($is_admin){
+    $attachments['#attached']['library'][] = 'ib3_reports/admin-css';
+  //}
+}

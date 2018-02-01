@@ -1,0 +1,25 @@
+.toolbar-icon.toolbar-icon-menu-link-content\:8608e311-7686-48aa-8c28-5420cd99fae5:before {
+  background-image: url('../images/icons/787878/file.svg');
+}
+.toolbar-icon.toolbar-icon-menu-link-content\:8608e311-7686-48aa-8c28-5420cd99fae5:active:before,
+.toolbar-icon.toolbar-icon-menu-link-content\:8608e311-7686-48aa-8c28-5420cd99fae5.menu-item--active:before {
+  background-image: url('../images/icons/000000/file.svg');
+}
+
+.toolbar-icon.toolbar-icon-menu-link-content\:645d4ea8-d106-4156-8ee0-dfacba6ef459:before,
+.toolbar-icon.toolbar-icon-ib3-reports-index:before {
+  background-image: url('../images/icons/787878/heart.svg');
+}
+.toolbar-icon.toolbar-icon-menu-link-content\:645d4ea8-d106-4156-8ee0-dfacba6ef459:active:before,
+.toolbar-icon.toolbar-icon-ib3-reports-index:active:before,
+.toolbar-icon.toolbar-icon-ib3-reports-index.menu-item--active:before {
+  background-image: url('../images/icons/000000/heart.svg');
+}
+
+.test--success {
+  color: #3FBFBB;
+}
+
+.test--error {
+  color: #f00;
+}

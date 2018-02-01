@@ -1,0 +1,5 @@
+description: 'Executes the phpunit browser tests for pages.'
+options: {}
+arguments: {}
+messages:
+    success: 'Turned out nice again.'

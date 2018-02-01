@@ -1,0 +1,6 @@
+services:
+  ib3_reports.test_parser:
+    class: Drupal\ib3_reports\Services\TestParser
+    arguments: ['@logger.factory']
+    tags:
+      - { name: phpunit.support }

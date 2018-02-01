@@ -1,0 +1,20 @@
+ib3_reports.index:
+  title: 'Health'
+  route_name: ib3_reports.index
+  description: 'Available website tests'
+  parent: system.admin
+  weight: 100
+
+ib3_reports.pages:
+  title: 'Page tests'
+  route_name: ib3_reports.pages
+  description: 'Run page tests'
+  parent: ib3_reports.index
+  weight: 10
+
+ib3_reports.modules:
+  title: 'Module tests'
+  route_name: ib3_reports.modules
+  description: 'Run module tests'
+  parent: ib3_reports.index
+  weight: 11

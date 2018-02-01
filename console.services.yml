@@ -1,0 +1,11 @@
+services:
+  ib3_reports.pages:
+    class: Drupal\ib3_reports\Command\PagesCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+  ib3_reports.modules:
+    class: Drupal\ib3_reports\Command\ModulesCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }

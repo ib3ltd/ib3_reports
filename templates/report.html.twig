@@ -1,0 +1,31 @@
+<h2>{{ heading }}</h2>
+
+<form method="post">
+  <div class="form-actions">
+    <input type="submit" id="ib3-reports-refresh" name="ib3-reports-refresh" value="Refresh" class="button js-form-submit form-submit">
+  </div>
+</form>
+
+{% for result in results %}
+
+  <dl class="list-group">
+
+    {% if (page != result.suite) %}
+      <dt class="list-group__heading">
+          {{ result.suite }}
+      </dt>
+
+      {% set page = result.suite %}
+    {% endif %}
+
+    <dd class="list-group__description">
+      {% if (result.status == 'pass') %}
+        {{ result.name }}  ( <span class='test--success'>{{ result.status }}</span> )
+      {% else %}
+        {{ result.name }} ( <span class='test--error'>{{ result.status }}</span> )
+      {% endif %}
+    </dd>
+
+  </dl>
+
+{% endfor %}
