@@ -59,7 +59,7 @@ class ReportsController extends ControllerBase {
       ->debug('Requesting results.');
 
     $tests = $this->testParser
-      ->load(\Drupal::root() . '/tests/results/pages.json')
+      ->load(\Drupal::root() . '/../tests/results/pages.json')
       ->prepareResults();
 
     $this->loggerFactory->get('ib3 test pages')
@@ -93,7 +93,7 @@ class ReportsController extends ControllerBase {
       ->debug('Requesting results.');
 
     $tests = $this->testParser
-      ->load(\Drupal::root() . '/tests/results/modules.json')
+      ->load(\Drupal::root() . '/../tests/results/modules.json')
       ->prepareResults();
 
     $this->loggerFactory->get('ib3 test modules')

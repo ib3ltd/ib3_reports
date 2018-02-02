@@ -38,7 +38,7 @@ class ModulesCommand extends Command {
   }
 
   public function process() {
-    $process = new Process('./vendor/bin/phpunit --testsuite modules --log-json=./tests/results/modules.json', \Drupal::root());
+    $process = new Process('./vendor/bin/phpunit --testsuite modules --log-json=./tests/results/modules.json', \Drupal::root().'/../');
     $process->run();
   }
 

@@ -38,7 +38,7 @@ class PagesCommand extends Command {
   }
 
   public function process() {
-    $process = new Process('./vendor/bin/phpunit --testsuite pages --log-json=./tests/results/pages.json', \Drupal::root());
+    $process = new Process('./vendor/bin/phpunit --testsuite pages --log-json=./tests/results/pages.json', \Drupal::root().'/../');
     $process->run();
   }
 
